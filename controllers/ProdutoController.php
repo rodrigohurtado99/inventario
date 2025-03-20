@@ -9,8 +9,13 @@ class ProdutoController
         $this->produto = $produto;
     }
 
-    // Exibir todos os produtos
+    public function home()
+    {
+        $produtos = $this->produto->getAll();
+        include "../views/home.php";
+    }
 
+    // Exibir todos os produtos
     public function index()
     {
         $produtos = $this->produto->getAll();

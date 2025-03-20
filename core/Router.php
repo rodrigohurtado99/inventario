@@ -36,9 +36,11 @@ class Router
                 }
             } else {
                 echo "Arquivo do controller '$controllerName' não encontrado!";
+                echo $_SERVER['REQUEST_URI'];
             }
         } else {
             echo "Controller ou ação não definidos!";
+            echo $_SERVER['REQUEST_URI'];
         }
     }
 
@@ -46,6 +48,6 @@ class Router
     {
         // Inclui o modelo necessário
         include_once '../models/Produto.php';
-        return new Produto();
+        return new Produto($pdo);
     }
 }
