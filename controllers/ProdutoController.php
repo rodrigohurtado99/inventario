@@ -10,6 +10,7 @@ class ProdutoController
     }
 
     // Exibir todos os produtos
+
     public function index()
     {
         $produtos = $this->produto->getAll();
