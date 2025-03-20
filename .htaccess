@@ -1,4 +1,8 @@
+# Habilita o modo de reescrita da url
 RewriteEngine On
-RewriteBase /meuappmvc/
+# Define a rota raiz 
+RewriteBase /meuappmvc/views/home.php
+# Define uma condição a ser seguida 
 RewriteCond %{REQUEST_FILENAME} !-f
+# Reescreve a regra
 RewriteRule ^(.+)$ public/index.php?controller=$1 [QSA,L]
