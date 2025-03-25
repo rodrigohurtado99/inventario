@@ -1,6 +1,6 @@
 <?php 
 
-require_once BASE_PATH . "/app/controllers/UserController.php";
+require_once BASE_PATH . "/app/controllers/CelularesController.php";
 
 function route($url)
 {
@@ -8,10 +8,10 @@ function route($url)
 
     if($url === "") {
         // página inicial
-        $controller = new UserController();
+        $controller = new CelularesController();
         $controller->index();
     } elseif($url === "users") {
-        $controller = new UserController();
+        $controller = new CelularesController();
         $controller->users();
     } else {
         echo "Página não encontrada";
