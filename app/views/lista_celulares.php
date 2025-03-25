@@ -22,6 +22,11 @@
                 </div>
             </form>
         </div>
+        <?php if($celulares) {
+            echo "ok";
+        }
+
+        ?>
 
 </body>
 </html>
