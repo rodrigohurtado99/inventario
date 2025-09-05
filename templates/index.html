@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+</head>
+<body>
+    <div class="container border mt-4">
+    <h1>Login</h1>
+    <form action="index.html" method="post">
+        <input type="text" name="usuario" class=" form-control m-2" placeholder="Digite aqui seu usuário">
+        <input type="password" name="senha" class=" form-control m-2" placeholder="Digite aqui sua senha">
+        <input type="button" class="btn m-2" value="Entrar">
+    </form>
+    </div>
+</body>
+</html>
