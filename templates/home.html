@@ -6,20 +6,20 @@
     <title>Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
 </head>
-<body>
-  <div class="row">
-    <div class="col col-lg-2 bg-primary" style="height: 100vh;">
-      Menu
-      <p>asfasf</p>
-    </div>
-    <div class="col-sm-4 bg-secondary">
-      Inventário
-    </div>
-    <div class="col-sm-4 bg-success">
-      Account
-    </div>
-  </div>
-</div>
-
+<body class="bg-secondary">
+<nav class="navbar navbar-dark bg-dark text-white fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <h4>INVENTÁRIO DE CELULARES</h4>
+    <a href="/">
+    <i class="bi bi-person text-white"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+    </svg></i>
+    </a>
+</nav>
+<nav class="navbar-dark bg-dark border-top" style="max-width: 2%; height: 100vh;">
+</nav>
 </body>
 </html>
