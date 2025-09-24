@@ -12,11 +12,15 @@ login_manager = LoginManager() # cria o gerenciado de login
 login_manager.init_app(app) # conecta ele ao app
 login_manager.login_view = 'login' # define página de login padrão
 
+# mensagem de erro ao tentar acessar uma página que é necessário estar logado
+login_manager.login_message = "Você precisa estar logado para acessar esta página."
+login_manager.login_message_category = "warning"
 
 # exemplo de base de dados
 usuarios = {
     'rodrigo': generate_password_hash('1234')
 }
+
 
 # classe de métodos do usuário
 
@@ -32,8 +36,13 @@ def load_user(user_id):
 @app.route('/home')
 @login_required # exige que esteja logado para acessar a página
 def home():
-    
     return render_template('home.html', nome=current_user.id) # pega o nome do usuário que fez login
+
+
+@app.route('/recuperar_senha')
+def recuperar_senha():
+    return render_template('recuperar_senha.html')
+
 
 @app.route("/", methods=["GET", "POST"])
 def login():
