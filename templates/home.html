@@ -1,85 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=tablet_android" />
-
-</head>
-
-<body class="bg-secondary text-white">
-    <div class="d-flex">
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 250px; height: 100vh;">
-            <h2>Inventário</h2>
-            <ul class="nav nav-pills flex-column mb-auto mt-3">
-                
-                <li class="nav-item ">
-                    <a href="#" class="nav-link text-light" aria-current="page">
-                       <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M284-277h60v-205h-60v205Zm332 0h60v-420h-60v420Zm-166 0h60v-118h-60v118Zm0-205h60v-60h-60v60ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm0-600v600-600Z"/></svg>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a href="#" class="nav-link text-light" aria-current="page">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#FFFFFF"><path d="M620-159 460-319l43-43 117 117 239-239 43 43-282 282Zm220-414h-60v-207h-60v90H240v-90h-60v600h251v60H180q-26 0-43-17t-17-43v-600q0-26 17-43t43-17h202q7-35 34.5-57.5T480-920q36 0 63.5 22.5T578-840h202q26 0 43 17t17 43v207ZM480-780q17 0 28.5-11.5T520-820q0-17-11.5-28.5T480-860q-17 0-28.5 11.5T440-820q0 17 11.5 28.5T480-780Z"/></svg>
-                        <span>Inventário</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                    id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <strong></strong>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container m-3">
-            <h1>Painel</h1>
-            <hr class="bg-white">
-            <div class="container">
-                <div class="d-flex">
-                <div class="card text-dark bg-dark m-3" style="max-width: 18rem; border-radius: 15px;">
-                <div class="card-body text-light" >
-                    <h2 class="card-title" style="font-size:100px">73 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                    </svg>
-                    </h2>
-                    <h4>Celulares cadastrados</h4>
-                </div>
-            </div>
-                <div class="card text-dark bg-dark m-3" style="max-width: 18rem; border-radius: 15px;">
-                <div class="card-body text-light" >
-                    <h2 class="card-title" style="font-size:100px">65 <svg xmlns="http://www.w3.org/2000/svg" height="70" viewBox="0 -960 960 960" width="70" fill="#FFFFFF"><path d="M180-40q-24.75 0-42.37-17.63Q120-75.25 120-100v-760q0-24.75 17.63-42.38Q155.25-920 180-920h600q24.75 0 42.38 17.62Q840-884.75 840-860v760q0 24.75-17.62 42.37Q804.75-40 780-40H180Zm0-150v90h600v-90H180Zm218 65h164v-40H398v40ZM180-250h600v-520H180v520Zm0-580h600v-30H180v30Zm0 0v-30 30Zm0 640v90-90Z"/></svg>
-                    </h2>
-                    <h4>Tablets Cadastrados</h4>
-                </div>
-            </div>
-                <div class="card text-dark bg-dark m-3" style="max-width: 18rem; border-radius: 15px;">
-                <div class="card-body text-light" >
-                    <h2 class="card-title" style="font-size:100px">2 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-fill-check" viewBox="0 0 16 16">
-                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
-                    </svg>
-                    </h2>
-                    <h4>Usuários cadastrados</h4>
-                </div>
-            </div>
-        </div>
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %} 
+<body class="bg-cyan-950">
+    <div class="flex">
+    <div class="h-screen w-48 bg-black">
+        <h1 class="text-4xl p-3 text-white  text-center">Home</h1>
+    </div>
+    <div class="flex-col p-3">
+        <h1 class="text-4xl text-white">Inventário</h1>
+        <hr class="w-96">
+        <div class="row text-4xl text-white mt-8">Listagem</div>
+        <div>
+            <table>
+            <tbody class="border">
+                <td>teste</td>
+            </tbody>
+        </table>
         </div>
     </div>
+    </div>
+    <!-- <footer>
+        <p class="text-white">Copyright &copy; 2025 Metalúrgica Skymsen LTDA</p>
+    </footer> -->
 </body>
 
-</html>
+{% endblock %}

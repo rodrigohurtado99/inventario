@@ -39,6 +39,16 @@ def home():
     return render_template('home.html', nome=current_user.id) # pega o nome do usuário que fez login
 
 
+@app.route('/inventario')
+@login_required
+def inventario():
+    celulares = [
+        {"id": 1, "modelo": "Samsung A20", "imei": "123456789012345"},
+        {"id": 2, "modelo": "iPhone 11", "imei": "987654321098765"},
+        {"id": 3, "modelo": "Xiaomi Redmi Note", "imei": "555555555555555"}
+    ]
+    return render_template('inventario.html', celulares=celulares)
+
 @app.route('/recuperar_senha')
 def recuperar_senha():
     return render_template('recuperar_senha.html')
