@@ -7,6 +7,7 @@
 <body class=" bg-gray-100 flex items-center justify-center h-screen ">
   <div class="bg-white p-8 rounded-xl shadow-md max-w-9/10 m-3">
     <span class="font-bold text-center text-dark-600"><a href="https://www.skymsen.com"><img src="../static/img/logo.png"></a></span>
+    <small class="py-5">Digite abaixo os dados de acesso para acessar a plataforma.</small>
 
     <form method="POST">
       <!-- Nome -->
@@ -41,8 +42,8 @@
       >
         Acessar
       </button>
-      <a href="{{url_for('recuperar_senha')}}" class="text-dark-700 mt-3">Esqueci minha senha</a>
-      <p class="text-dark-700 mt-3">Copyright &copy; 2025 <a href="https://www.skymsen.com" class="text-blue-700">Metalúrgica SIEMSEN LTDA.</a></p>
+      <p class="text-blue-700 underline"><a href="{{url_for('recuperar_senha')}}">Esqueci minha senha</a></p>
+      <p class="text-dark-700 mt-3">Copyright &copy; 2025 <a href="https://www.skymsen.com" class="text-blue-700">Metalúrgica Skymsen LTDA.</a></p>
     </form>
     <!-- Tratamento de erros -->
      {% with messages = get_flashed_messages(with_categories=true) %}

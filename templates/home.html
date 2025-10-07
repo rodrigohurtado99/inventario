@@ -1,27 +1,35 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %} 
-<body class="bg-cyan-950">
+<body class="bg-gray-500">
     <div class="flex">
-    <div class="h-screen w-48 bg-black">
-        <h1 class="text-4xl p-3 text-white  text-center">Home</h1>
+    <div class="w-48 bg-gray-700 text-white h-screen">
+        <h1 class="p-2"><img src="../static/img/logo.png" alt="logo_skymsen"></h1>
+        <a href="#dashboard">
+        <p class="hover:bg-sky-700 rounded">
+        <span class="material-symbols-outlined p-3">avg_pace</span>
+        Dashboard
+      </p>
+      </a>
+        <a href="#aparelhos"><p class="p-3 m-2 hover:bg-sky-700 rounded">Aparelhos</p></a>
     </div>
-    <div class="flex-col p-3">
-        <h1 class="text-4xl text-white">Inventário</h1>
-        <hr class="w-96">
-        <div class="row text-4xl text-white mt-8">Listagem</div>
-        <div>
-            <table>
-            <tbody class="border">
-                <td>teste</td>
-            </tbody>
-        </table>
-        </div>
-    </div>
-    </div>
-    <!-- <footer>
-        <p class="text-white">Copyright &copy; 2025 Metalúrgica Skymsen LTDA</p>
-    </footer> -->
+  <div class="m-10">
+  <h1 class="text-white text-4xl mb-10">Dashboard</h1>
+  <div class="grid grid-cols-4 gap-4">
+  <div class="bg-stone-800 text-white p-2 rounded">
+    <h2 class="text-9xl">73</h2>
+    <p class="ml-4">Celulares cadastrados</p>
+  </div>
+  <div class="bg-stone-800 text-white p-2 rounded">
+    <h2 class="text-9xl">73</h2>
+    <p class="ml-4">Tablets cadastrados</p>
+  </div>
+  <div class="bg-stone-800 text-white p-2 rounded">
+    <h2 class="text-9xl">146</h2>
+    <p class="ml-4">Total de aparelhos</p>
+  </div>
+</div>
+  </div>
 </body>
 
 {% endblock %}
