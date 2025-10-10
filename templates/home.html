@@ -1,35 +1,102 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %} 
-<body class="bg-gray-500">
-    <div class="flex">
-    <div class="w-48 bg-gray-700 text-white h-screen">
-        <h1 class="p-2"><img src="../static/img/logo.png" alt="logo_skymsen"></h1>
-        <a href="#dashboard">
-        <p class="hover:bg-sky-700 rounded">
-        <span class="material-symbols-outlined p-3">avg_pace</span>
-        Dashboard
-      </p>
-      </a>
-        <a href="#aparelhos"><p class="p-3 m-2 hover:bg-sky-700 rounded">Aparelhos</p></a>
-    </div>
-  <div class="m-10">
-  <h1 class="text-white text-4xl mb-10">Dashboard</h1>
-  <div class="grid grid-cols-4 gap-4">
-  <div class="bg-stone-800 text-white p-2 rounded">
-    <h2 class="text-9xl">73</h2>
-    <p class="ml-4">Celulares cadastrados</p>
-  </div>
-  <div class="bg-stone-800 text-white p-2 rounded">
-    <h2 class="text-9xl">73</h2>
-    <p class="ml-4">Tablets cadastrados</p>
-  </div>
-  <div class="bg-stone-800 text-white p-2 rounded">
-    <h2 class="text-9xl">146</h2>
-    <p class="ml-4">Total de aparelhos</p>
-  </div>
+<body class="bg-gray-200">
+  <header class="bg-cyan-900 text-white">
+    <h1 class="text-2xl text-center p-2">INVENTÁRIO</h1>
+  </header>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10 ml-5 mr-5">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Aparelho
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Nome
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Armazenamento
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Telefone
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <span class="sr-only">Edit</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Samsung A16 5G 
+                </th>
+                <td class="px-6 py-4">
+                    Licitação
+                </td>
+                <td class="px-6 py-4">
+                    256 GB
+                </td>
+                <td class="px-6 py-4">
+                    (47) 99122-0250
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                    <span class="material-symbols-outlined">edit</span>
+                    </a>
+                    
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                    <span class="material-symbols-outlined">delete</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Samsung A16 5G 
+                </th>
+                <td class="px-6 py-4">
+                    Licitação
+                </td>
+                <td class="px-6 py-4">
+                    64 GB
+                </td>
+                <td class="px-6 py-4">
+                    (47) 99122-0250
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><span class="material-symbols-outlined">
+edit
+</span></a>
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><span class="material-symbols-outlined">
+delete
+</span></a>
+                </td>
+            </tr>
+            <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Samsung A16 5G 
+                </th>
+                <td class="px-6 py-4">
+                    Licitação
+                </td>
+                <td class="px-6 py-4">
+                    64 GB
+                </td>
+                <td class="px-6 py-4">
+                    (47) 99122-0250
+                </td>
+                <td class="px-6 py-4 text-right">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><span class="material-symbols-outlined">
+edit
+</span></a>
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><span class="material-symbols-outlined">
+delete
+</span></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-  </div>
-</body>
 
+</body>
 {% endblock %}
